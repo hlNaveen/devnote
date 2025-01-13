@@ -1,0 +1,32 @@
+name: devnotes
+description: A simple tool for developers to track tasks and document code snippets.
+
+# The version of the app
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Other dependencies
+  shared_preferences: ^2.0.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.2.10
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png # Path to the logo used in the splash screen
+
+flutter_native_splash:
+  color: "#ffffff" # Background color for the splash screen
+  image: assets/logo.png # Path to your logo
+  android: true
+  ios: true
+
